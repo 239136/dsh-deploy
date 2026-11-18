@@ -1,0 +1,41 @@
+{
+  "name": "dsh-deploy",
+  "version": "0.1.0",
+  "description": "Declarative DSH deployment manifests: import a plugin list, see exactly what would change, then install the pinned versions on this machine.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "deployment",
+    "manifest",
+    "sync"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

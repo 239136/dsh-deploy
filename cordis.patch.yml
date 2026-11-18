@@ -1,0 +1,6 @@
+# dsh-deploy bundle patch.
+# Mounted when this plugin is installed into a profile; registers the
+# dsh_deploy_plan / dsh_deploy_apply tools.
+- insert:
+    - id: dsh-deploy
+      name: 'dsh-deploy'
